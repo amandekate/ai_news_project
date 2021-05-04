@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Typography } from "@material-ui/core";
 import wordsToNumbers from "words-to-numbers";
 import alanBtn from "@alan-ai/alan-sdk-web";
-
-import logo from "./images/logo.png";
 import { NewsCards, Modal } from "./components";
 import useStyles from "./styles";
 
@@ -79,12 +77,12 @@ const App = () => {
         <div className={classes.footer}>
           <Typography variant="body1" component="h2">
             Created by
-            <a className={classes.link} href="">
+            <a className={classes.link} href="https://www.linkedin.com/in/aman-dekate-1b8254195/">
               {" "}
               Aman Dekate
             </a>{" "}
             -{" "}
-            <a className={classes.link} href="">
+            <a className={classes.link} href="https://github.com/amandekate">
               GitHub
             </a>
           </Typography>
