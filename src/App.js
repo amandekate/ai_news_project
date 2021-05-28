@@ -4,6 +4,7 @@ import wordsToNumbers from "words-to-numbers";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { NewsCards, Modal } from "./components";
 import useStyles from "./styles";
+import Logo from "./images/ai_bg.png"
 
 const App = () => {
   const [activeArticle, setActiveArticle] = useState(0);
@@ -66,14 +67,14 @@ const App = () => {
           </div>
         ) : null}
         <img
-          src="https://alan.app/voice/images/previews/preview.jpg"
+          src={Logo}
           className={classes.alanLogo}
           alt="logo"
         />
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-      {!newsArticles.length ? (
+      {/* {!newsArticles.length ? (
         <div className={classes.footer}>
           <Typography variant="body1" component="h2">
             Created by
@@ -87,7 +88,7 @@ const App = () => {
             </a>
           </Typography>
         </div>
-      ) : null}
+      ) : null} */}
     </div>
   );
 };
