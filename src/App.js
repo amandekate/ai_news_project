@@ -4,7 +4,7 @@ import wordsToNumbers from "words-to-numbers";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { NewsCards, Modal } from "./components";
 import useStyles from "./styles";
-import Logo from "./images/ai_bg.png"
+import Logo from "./images/ai_bg.webp"
 
 const App = () => {
   const [activeArticle, setActiveArticle] = useState(0);
