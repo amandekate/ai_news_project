@@ -74,11 +74,11 @@ const App = () => {
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
-      {/* {!newsArticles.length ? (
+      {!newsArticles.length ? (
         <div className={classes.footer}>
           <Typography variant="body1" component="h2">
             Created by
-            <a className={classes.link} href="https://www.linkedin.com/in/aman-dekate-1b8254195/">
+            <a className={classes.link} href="https://portfolio-amandekate.vercel.app/">
               {" "}
               Aman Dekate
             </a>{" "}
@@ -88,7 +88,7 @@ const App = () => {
             </a>
           </Typography>
         </div>
-      ) : null} */}
+      ) : null}
     </div>
   );
 };
